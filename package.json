@@ -2,10 +2,7 @@
   "name": "flikkerr",
   "version": "0.0.1",
   "description": "App that searches your query on flicker",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "server.js",
   "keywords": [
     "flikkerr",
     "flicker",
@@ -14,5 +11,18 @@
     "thoughtworks"
   ],
   "author": "Shridhar Deshmukh",
-  "license": "ISC"
+  "license": "ISC",
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.13.2",
+    "cookie-parser": "~1.3.5",
+    "debug": "~2.2.0",
+    "express": "~4.13.1",
+    "hbs": "~3.1.0",
+    "morgan": "~1.6.1",
+    "node-sass-middleware": "0.8.0",
+    "serve-favicon": "~2.3.0"
+  }
 }
