@@ -2,3 +2,4 @@ node_modules
 lib
 npm-debug.log
 style.css.map
+data/flickr
