@@ -1,11 +1,21 @@
 request = require('request')
+FlickrAPI = require('flickrapi')
+keys = require('../../../config/flicker')
 
 class Gateway
+  constructor: () ->
+    FlickrAPI.tokenOnly {
+      api_key: keys.api_key,
+      format: 'json'
+    }, (error, flickr) =>
+      @flickr = flickr
+
   getImage: (query, callback) ->
-    console.log callback
-    request 'http://localhost:3000/flicker.json', (error, response, body) ->
-      console.log error, response, body
-      callback body
+    @flickr.photos.search {
+      text: query,
+      extras: 'url_q'
+    }, (error, response) ->
+      callback response
 
 
 module.exports = new Gateway()
