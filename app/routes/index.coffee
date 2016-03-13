@@ -5,8 +5,7 @@ router = express.Router()
 ### GET home page. ###
 
 router.get '/', (req, res, next) ->
-  res.send 'Enter Search String'
-  return
+  res.render 'index', {title: "Hello"}
 
 router.get '/image', ImageController.index
 

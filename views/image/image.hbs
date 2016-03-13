@@ -1,0 +1,10 @@
+
+<ul class="gallery">
+  {{#each images}}
+    <li class="gallery-item">
+      <a href="#" class="photo" style="background-image:url({{this.url}})">
+        <span class="title">{{this.title}}</span>
+      </a>
+    </li>
+  {{/each}}
+</ul>
