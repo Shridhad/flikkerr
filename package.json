@@ -22,7 +22,7 @@
     "express": "~4.13.1",
     "flickrapi": "^0.4.1",
     "hbs": "~3.1.0",
-    "morgan": "~1.6.1",
+    "morgan": "~1.9.1",
     "node-sass-middleware": "0.8.0",
     "serve-favicon": "~2.3.0"
   },
